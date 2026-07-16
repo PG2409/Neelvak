@@ -1,0 +1,62 @@
+# Resource Consumption Report
+
+Phase: before_eventbus_publish_10000
+  Current Heap: 0.03 MB
+  Peak Heap: 0.03 MB
+
+Phase: after_eventbus_publish_10000
+  Current Heap: 2.09 MB
+  Peak Heap: 15.37 MB
+
+Phase: before_eventbus_publish_50000
+  Current Heap: 0.02 MB
+  Peak Heap: 0.02 MB
+
+Phase: after_eventbus_publish_50000
+  Current Heap: 26.39 MB
+  Peak Heap: 76.67 MB
+
+Phase: before_eventbus_publish_100000
+  Current Heap: 0.03 MB
+  Peak Heap: 0.03 MB
+
+Phase: after_eventbus_publish_100000
+  Current Heap: 96.59 MB
+  Peak Heap: 153.68 MB
+
+Phase: registry_peak_100
+  Current Heap: 0.12 MB
+  Peak Heap: 0.18 MB
+
+Phase: registry_peak_1000
+  Current Heap: 1.11 MB
+  Peak Heap: 1.87 MB
+
+Phase: registry_peak_5000
+  Current Heap: 5.45 MB
+  Peak Heap: 9.38 MB
+
+Phase: envs_provisioned_100
+  Current Heap: 0.02 MB
+  Peak Heap: 0.02 MB
+
+Phase: envs_provisioned_500
+  Current Heap: 0.06 MB
+  Peak Heap: 0.06 MB
+
+Phase: scheduler_peak_100
+  Current Heap: 1.48 MB
+  Peak Heap: 2.02 MB
+
+Phase: scheduler_peak_500
+  Current Heap: 0.66 MB
+  Peak Heap: 3.29 MB
+
+Phase: exhaustion_peak
+  Current Heap: 257.20 MB
+  Peak Heap: 257.20 MB
+
+Phase: exhaustion_cleanup
+  Current Heap: 0.18 MB
+  Peak Heap: 257.21 MB
+

@@ -1,0 +1,80 @@
+{
+  "id": "691a7902-d919-4bc1-a945-5bb14f03c449",
+  "created_at": "2026-07-04T09:27:07.800125",
+  "updated_at": "2026-07-04T09:27:16.345075",
+  "turns": [
+    {
+      "turn_id": "b25e3ab1-2343-4d6d-bdad-5ccda5d24ed4",
+      "timestamp": "2026-07-04T09:27:16.345061",
+      "user_prompt": "what is love ,anger or sleep",
+      "response": {
+        "conversation_id": "691a7902-d919-4bc1-a945-5bb14f03c449",
+        "workflow_id": "691a7902-d919-4bc1-a945-5bb14f03c449",
+        "winner": "RUNTIME ERROR",
+        "tier": "COMPETITIVE TIER",
+        "processes": [
+          {
+            "id": "ST_01",
+            "role": "Node Task - RETRIEVAL",
+            "state": "TERMINATED",
+            "model": "gemini-2.0-flash-lite",
+            "provider": "gemini"
+          },
+          {
+            "id": "ST_02",
+            "role": "Node Task - COMPETITIVE",
+            "state": "TERMINATED",
+            "model": "gemini-2.0-flash",
+            "provider": "gemini"
+          },
+          {
+            "id": "ST_03",
+            "role": "Node Task - STANDARD",
+            "state": "TERMINATED",
+            "model": "gemini-2.0-flash",
+            "provider": "gemini"
+          }
+        ],
+        "telemetry": [
+          "[Kernel] Multi-pass compilation successful. Created WorkflowPlan 691a7902-d919-4bc1-a945-5bb14f03c449.",
+          "[Kernel] Provisioned workspace environment container at: workspace\\691a7902-d919-4bc1-a945-5bb14f03c449",
+          "[Kernel] Topological sort completed. Layers count: 3.",
+          "[Kernel] Executing TCB node ST_01 on RETRIEVAL runtime.",
+          "[Kernel] Executing TCB node ST_02 on COMPETITIVE runtime.",
+          "[Kernel] Executing TCB node ST_03 on STANDARD runtime.",
+          "[Kernel] Deprovisioned sandbox container. Resources released."
+        ],
+        "output": "Execution Interrupted: RUNTIME ERROR Reason: {\"status\": \"provider_error\", \"provider\": \"gemini\", \"reason\": \"All routing chain providers exhausted: All providers exhausted. Last error: gemini returned 429: { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota ex\"}",
+        "metadata": {
+          "estimated_cost_usd": 0.0,
+          "latency_ms": 0.0,
+          "provider": "fallback",
+          "model": "none"
+        },
+        "runtime_selection": [
+          {
+            "intent": "what is love ,anger or sleep",
+            "complexity": "LOW",
+            "chosen_runtime": "RETRIEVAL",
+            "reason": "Matched capability constraints for tier: LOW",
+            "confidence": "98%"
+          },
+          {
+            "intent": "what is love ,anger or sleep",
+            "complexity": "HIGH",
+            "chosen_runtime": "COMPETITIVE",
+            "reason": "Matched capability constraints for tier: HIGH",
+            "confidence": "98%"
+          },
+          {
+            "intent": "what is love ,anger or sleep",
+            "complexity": "STANDARD",
+            "chosen_runtime": "STANDARD",
+            "reason": "Matched capability constraints for tier: STANDARD",
+            "confidence": "98%"
+          }
+        ]
+      }
+    }
+  ]
+}

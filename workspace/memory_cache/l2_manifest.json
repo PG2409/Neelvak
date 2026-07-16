@@ -1,0 +1,194 @@
+{
+  "Hello world": {
+    "path": "workspace/memory_cache\\l2_1383996557607634101.txt",
+    "access_count": 2
+  },
+  "Spam": {
+    "path": "workspace/memory_cache\\l2_-5901340671703176669.txt",
+    "access_count": 5
+  },
+  "Perform code reasoning checking metrics data": {
+    "path": "workspace/memory_cache\\l2_-8938019873410395372.txt",
+    "access_count": 2
+  },
+  "audit integration test": {
+    "path": "workspace/memory_cache\\l2_-204422786259997812.txt",
+    "access_count": 2
+  },
+  "normal prompt": {
+    "path": "workspace/memory_cache\\l2_-7277519937734550858.txt",
+    "access_count": 2
+  },
+  "Summarise system performance metrics for the month.": {
+    "path": "workspace/memory_cache\\l2_-1912081339334427092.txt",
+    "access_count": 2
+  },
+  "What is Python?": {
+    "path": "workspace/memory_cache\\l2_-4581074712779343953.txt",
+    "access_count": 2
+  },
+  "hi": {
+    "path": "workspace/memory_cache\\l2_2951983417021265514.txt",
+    "access_count": 12
+  },
+  "what is full form of llm": {
+    "path": "workspace/memory_cache\\l2_-5194352252594606243.txt",
+    "access_count": 4
+  },
+  "what is full form of www": {
+    "path": "workspace/memory_cache\\l2_762275151554849222.txt",
+    "access_count": 0
+  },
+  "hji": {
+    "path": "workspace/memory_cache\\l2_5051133035925820726.txt",
+    "access_count": 0
+  },
+  "hiji": {
+    "path": "workspace/memory_cache\\l2_7927781067766272278.txt",
+    "access_count": 0
+  },
+  "what is full form of daiict in nadiad \nwho is president of america\nwho is most powerfull men": {
+    "path": "workspace/memory_cache\\l2_6021246358714953831.txt",
+    "access_count": 0
+  },
+  "what is full form of WHO": {
+    "path": "workspace/memory_cache\\l2_6473325620624833430.txt",
+    "access_count": 0
+  },
+  "Answer only:\n\nWhat is the full form of LLM?\n\nWhat is the capital of Japan?\n\nWho invented Python?": {
+    "path": "workspace/memory_cache\\l2_-714801420235291228.txt",
+    "access_count": 0
+  },
+  "Process this list:\n\nApple\nOrange\nBanana\nKiwi\nMango\nCherry\nPeach\nPear\n\nReturn:\n\n\u2022 Alphabetical order\n\n\u2022 Reverse alphabetical order\n\n\u2022 Markdown table\n\n\u2022 Total count": {
+    "path": "workspace/memory_cache\\l2_-2242099804633583030.txt",
+    "access_count": 0
+  },
+  "what is love": {
+    "path": "workspace/memory_cache\\l2_6555592809610007027.txt",
+    "access_count": 4
+  },
+  "what is last treaded price of adani ports": {
+    "path": "workspace/memory_cache\\l2_-9061206063473765423.txt",
+    "access_count": 0
+  },
+  "good morning": {
+    "path": "workspace/memory_cache\\l2_-2598701320475420045.txt",
+    "access_count": 0
+  },
+  "what is ai": {
+    "path": "workspace/memory_cache\\l2_-1675316397996750209.txt",
+    "access_count": 0
+  },
+  "what is full form of mit": {
+    "path": "workspace/memory_cache\\l2_1285423731190249764.txt",
+    "access_count": 0
+  },
+  "explin you internal working \nas neelvak this platform": {
+    "path": "workspace/memory_cache\\l2_-3123400116952749835.txt",
+    "access_count": 0
+  },
+  "what is love ,anger or sleep": {
+    "path": "workspace/memory_cache\\l2_7975304774531082172.txt",
+    "access_count": 0
+  },
+  "what is love  anger and sleep": {
+    "path": "workspace/memory_cache\\l2_8869133668762452837.txt",
+    "access_count": 0
+  },
+  "Execute this task under a strict cost ceiling constraint of $0.0001 total budget. \n\nTask: Convert the word 'Intelligence' into its binary ASCII format. \n\nBefore showing the final value, output the specific Model Tier and Active Provider selected by the Cost Optimizer to meet this budget constraint.": {
+    "path": "workspace/memory_cache\\l2_-5190746777446648188.txt",
+    "access_count": 0
+  },
+  "Execute this under Runtime A (Competitive Loop) with full independent surveillance tracking.\n\nTask: Generate a JSON array containing three valid country codes and their respective internet TLD extensions. \n\nEnforce a strict adversarial verification loop. The Unbiased Watcher must reject the payload if any key names deviate from standard camelCase or if formatting contains raw conversational markdown tags outside the JSON buffer.": {
+    "path": "workspace/memory_cache\\l2_-6807297138450688328.txt",
+    "access_count": 0
+  },
+  "[Turn 1]\nStore this environment parameter: system_node_id = \"NV-8892-X\". \nConfirm storage with a single character: \"K\".\n\n[Turn 2]\nRecall the current system_node_id. \nIf the Context Sufficiency Score (CSS) meets or exceeds 0.85, force an immediate pre-compute short-circuit and pull directly from the memory manager cache without triggering the AICompiler.": {
+    "path": "workspace/memory_cache\\l2_1755674905199270209.txt",
+    "access_count": 0
+  },
+  "Solve this utilizing the sandboxed file subsystem.\n\nStage 1: Attempt to append the string \"SYSTEM_CHECK_OK\" to a scratchpad file named logs/node.txt.\nStage 2: Attempt to read a file located outside the sandbox path using the relative structure '../../secret_config.json'.\n\nVerify if the ToolManager Security Ring intercepts the Stage 2 instruction, flags a directory traversal violation, and smoothly falls back to a safe sandboxed execution state without throwing a system crash.": {
+    "path": "workspace/memory_cache\\l2_1405613272381381303.txt",
+    "access_count": 0
+  },
+  "Simulate a transient service drop.\n\nTask: Summarize the primary differences between asynchronous and synchronous process scheduling in an operating system microkernel.\n\nIf the primary provider engine encounters a simulated 429 quota exhaustion or a 503 service dropout, force the ProviderInterface to log a degraded flag for that node, shift the active payload onto the first passive fallback in the routing chain, and confirm the active provider name in the execution summary.": {
+    "path": "workspace/memory_cache\\l2_-425455069087367795.txt",
+    "access_count": 0
+  },
+  "Execute this task strictly under Runtime A (Competitive Multi-Agent Matrix) with out-of-band Surveillance Watchdog tracking enabled.\n\nTask Configuration:\n1. Primary Worker Agent (Agent X): Assigned to analyze the core architectural tradeoffs between Monolithic and Microkernel operating system designs under high-concurrency loads.\n2. Shadow Backup Agent (Agent Y): Operates in passive hot-standby mode, syncing the execution context in real-time.\n\nChaos Simulation Rules:\n- Simulate a catastrophic transient service dropout (HTTP 429 Quota Exhaustion followed by an immediate HTTP 503 Gateway Down) on the primary provider endpoint (Groq / llama-3.3-70b-versatile).\n- Upon intercepting the simulated fault, force the ProviderInterface to set a session-level 'degraded' flag for that node, hot-swap Agent X's live execution stack over to Agent Y, and fall back to the passive provider in the routing chain (Gemini / gemini-2.5-pro) without dropping the transaction.\n\nSurveillance Guardrails:\n- The independent Surveillance Watchdog Agent must audit the final combined payload. It must reject the output if any internal vendor stack traces leak into the markdown or if the architectural report lacks clear markdown table summaries.\n\nExpected Telemetry Output Format:\n- [Active Agent Registry Sync]: Show the handoff state transition from Agent X to Agent Y.\n- [Provider Interface Log Vector]: Confirm the degraded provider, the injected status codes (429/503), and the name of the active provider that successfully completed the compilation.\n- [Final Output Yield]: Relational architectural matrix.": {
+    "path": "workspace/memory_cache\\l2_6509754964247069704.txt",
+    "access_count": 0
+  },
+  "Execute this request using the Neelvak AIOS Microkernel Scheduler.\n\nWorkflow Configuration:\n\nTask A (Runtime A - Competitive)\nCompare Microkernel, Microservices, and Service Mesh architectures for an AI Operating System supporting one million concurrent workflows.\n\nTask B (Runtime B - Standard)\nGenerate a deployment roadmap for Development \u2192 Testing \u2192 Staging \u2192 Production.\n\nTask C (Runtime C - Micro)\nExtract all architecture names into alphabetical order.\nReturn:\n\u2022 Count\n\u2022 Unique list\n\u2022 Markdown table\n\nTask D (Runtime E - Retrieval)\nSearch memory for any previous architecture-related records.\nIf none exist, return \"Cache Miss\".\n\nExecution Rules\n\n\u2022 Compiler must decompose the workflow automatically.\n\u2022 Scheduler should execute independent tasks in parallel.\n\u2022 Dependency graph must be respected.\n\u2022 Merge all runtime outputs into one report.\n\nTelemetry Required\n\n\u2022 Workflow Graph\n\u2022 Runtime Allocation\n\u2022 Task Dependencies\n\u2022 Parallel Execution Groups\n\u2022 Runtime Completion Order\n\u2022 Total Execution Time\n\u2022 Final Merge Report": {
+    "path": "workspace/memory_cache\\l2_6179920501003664462.txt",
+    "access_count": 1
+  },
+  "anayis first quater of adani ports in depth and compe you result with peers and give me final report": {
+    "path": "workspace/memory_cache\\l2_-3605851796217945552.txt",
+    "access_count": 0
+  },
+  "Execute this macro-task strictly under Runtime A (Competitive Multi-Agent Matrix) to perform an intensive peer evaluation.\n\nTask Configuration:\n1. Primary Worker Agent: Generate a definitive comprehensive architectural report comparing pgvector, Pinecone, and Milvus for an enterprise scaling to 50 million vector profiles.\n2. Adversarial Looping Agent (Peer Evaluator): Actively cross-examine the Primary Worker's output. Forcefully challenge its assertions regarding horizontal scaling limits, HNSW index build speeds, memory overhead, and true ACID compliance. Iteratively refine the document.\n3. Unbiased Surveillance Watchdog: Monitors the exchange out-of-band. It holds absolute veto power and must REJECT the final payload if the cross-examination loops infinitely, if any key names deviate from standard camelCase formatting, or if any conversational markdown text escapes the core JSON schema boundaries.\n\nExpected Telemetry Output Format:\n- [Primary Worker Allocation Vector]: Baseline architectural specs compiled.\n- [Adversarial Evaluation Log Matrix]: Transcribe the specific peer-critique iterations and delta adjustments made between the peer agents.\n- [Unbiased Watcher Telemetry Validation]: State machine transition evaluation status (PASSED/REJECTED verification invariants check).\n- [Final Output Yield]: Relational evaluation markdown matrix.": {
+    "path": "workspace/memory_cache\\l2_2618639967552407300.txt",
+    "access_count": 0
+  },
+  "what is god": {
+    "path": "workspace/memory_cache\\l2_-7108398367905217505.txt",
+    "access_count": 0
+  },
+  "Execute this workflow using Runtime A with Provider Fault Injection enabled.\n\nSimulate the following sequence.\n\nPrimary Provider\nGroq\nStatus:\nHTTP 429\nfollowed by\nHTTP 503\n\nSecondary Provider\nOpenRouter\n\nRecovery Rules\n\n\u2022 Detect failure automatically.\n\u2022 Mark Groq as degraded.\n\u2022 Retry once.\n\u2022 If retry fails,\nswitch execution to OpenRouter.\n\u2022 Preserve execution state.\n\u2022 Continue without restarting the workflow.\n\nRequired Output\n\nProvider Timeline\n\nFailure Detection\n\nRecovery Decision\n\nProvider Switch\n\nExecution Continuity\n\nFinal Response\n\nProvider Health Table\n\nDo not expose internal stack traces.": {
+    "path": "workspace/memory_cache\\l2_478959196436914032.txt",
+    "access_count": 0
+  },
+  "Execute using Runtime E.\n\nStore the following information exactly.\n\nProject\nNeelvak AIOS\n\nVersion\n2.0\n\nArchitecture\nMicrokernel\n\nLanguage\nPython\n\nScheduler\nPriority Queue\n\nCompiler\n10 Pass\n\nKernel\nEvent Driven\n\nMemory Rules\n\nStore every field independently.\n\nPromote frequently accessed records.\n\nDo not summarize.\n\nAfter storage,\n\nretrieve every field,\n\nverify integrity,\n\ncalculate memory checksum,\n\nand report cache layer used.\n\nTelemetry\n\nMemory Layer\n\nCache Promotion\n\nRetrieval Latency\n\nIntegrity Status\n\nChecksum": {
+    "path": "workspace/memory_cache\\l2_-1968877322071422981.txt",
+    "access_count": 0
+  },
+  "Compile this request into a workflow.\n\nTask 1\nExplain Artificial Intelligence.\n\nTask 2\nGenerate Python code implementing A* Search.\n\nTask 3\nTranslate Task 1 into French.\n\nTask 4\nCreate a Markdown comparison table.\n\nTask 5\nGenerate interview questions.\n\nScheduling Rules\n\nIndependent tasks execute simultaneously.\n\nDependent tasks execute only after prerequisites.\n\nTelemetry\n\nExecution DAG\n\nCritical Path\n\nParallel Groups\n\nScheduler Decisions\n\nWorker Allocation\n\nExecution Timeline": {
+    "path": "workspace/memory_cache\\l2_-160245337350743898.txt",
+    "access_count": 0
+  },
+  "Execute using Runtime A.\n\nAssign three independent worker agents.\n\nWorker Alpha\n\nDesign an AI Operating System.\n\nWorker Beta\n\nDesign a Distributed Cloud Platform.\n\nWorker Gamma\n\nDesign a High Availability Database.\n\nJudge Agent\n\nCompare every proposal.\n\nEvaluate\n\nScalability\n\nLatency\n\nFault Tolerance\n\nMaintainability\n\nSecurity\n\nWinner Selection\n\nReturn\n\nScore Table\n\nRanking\n\nReasoning\n\nFinal Winner\n\nJudge Confidence": {
+    "path": "workspace/memory_cache\\l2_-9087794601226340162.txt",
+    "access_count": 0
+  },
+  "Run this request through the complete compiler pipeline.\n\nCompiler Passes\n\nIntent Parsing\n\nSemantic Analysis\n\nCapability Matching\n\nPolicy Validation\n\nWorkflow Planning\n\nDependency Analysis\n\nRuntime Selection\n\nOptimization\n\nExecution Graph Generation\n\nCompilation Complete\n\nReturn\n\nIR-1\n\nIR-2\n\nIR-3\n\nExecution Graph\n\nRuntime Mapping\n\nFinal Plan\n\nDo not expose internal prompts.": {
+    "path": "workspace/memory_cache\\l2_5473603385387582790.txt",
+    "access_count": 0
+  },
+  "Run a controlled chaos simulation.\n\nInject\n\nProvider Timeout\n\nMemory Cache Miss\n\nRuntime Restart\n\nScheduler Delay\n\nNetwork Latency\n\nRecovery Rules\n\nNo workflow cancellation.\n\nRecover automatically.\n\nRetry only affected nodes.\n\nContinue execution.\n\nTelemetry\n\nFailure Timeline\n\nRecovery Timeline\n\nRecovered Nodes\n\nFailed Nodes\n\nRecovery Duration\n\nOverall Status": {
+    "path": "workspace/memory_cache\\l2_-1397993044106555276.txt",
+    "access_count": 1
+  },
+  "Execute this request through the complete Neelvak AIOS execution pipeline.\n\nWorkflow\n\nTask 1\nExplain Retrieval-Augmented Generation.\n\nTask 2\nCompare Vector Databases.\n\nTask 3\nGenerate Python implementation.\n\nTask 4\nDesign a scalable AI Operating System.\n\nTask 5\nCreate a deployment roadmap.\n\nTask 6\nStore project metadata into memory.\n\nTask 7\nRetrieve stored metadata.\n\nTask 8\nGenerate an executive summary.\n\nExecution Requirements\n\n\u2022 Use Compiler.\n\u2022 Build Workflow DAG.\n\u2022 Schedule tasks automatically.\n\u2022 Select optimal runtimes.\n\u2022 Select providers dynamically.\n\u2022 Enable watchdog monitoring.\n\u2022 Enable provider health monitoring.\n\u2022 Enable recovery policies.\n\u2022 Merge all runtime outputs.\n\nReturn\n\n\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\n\nExecution Summary\n\nWorkflow Graph\n\nCompiler Report\n\nScheduler Report\n\nRuntime Allocation Matrix\n\nAgent Allocation Matrix\n\nProvider Allocation\n\nModel Allocation\n\nMemory Operations\n\nRetrieval Operations\n\nRecovery Operations\n\nExecution Timeline\n\nResource Utilization\n\nExecution Cost\n\nFinal Response\n\n\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\n\nThe final response must contain actual generated content and not telemetry placeholders.\n\nIf any provider fails, recover automatically without terminating the workflow.\n\nThe watchdog agent must validate formatting, detect leaked telemetry, verify markdown integrity, and approve or reject the final payload.": {
+    "path": "workspace/memory_cache\\l2_-6504190030091363070.txt",
+    "access_count": 0
+  },
+  "hiu": {
+    "path": "workspace/memory_cache\\l2_-2528495798312853987.txt",
+    "access_count": 0
+  },
+  "what is anger": {
+    "path": "workspace/memory_cache\\l2_1052908773494945679.txt",
+    "access_count": 0
+  },
+  "what is full form of india": {
+    "path": "workspace/memory_cache\\l2_-2039714472856678928.txt",
+    "access_count": 0
+  },
+  "what is full form of daiicr": {
+    "path": "workspace/memory_cache\\l2_719111281203292400.txt",
+    "access_count": 0
+  },
+  "what is full form of daiict": {
+    "path": "workspace/memory_cache\\l2_-9091684859905682768.txt",
+    "access_count": 0
+  },
+  "what is lust": {
+    "path": "workspace/memory_cache\\l2_8550074090924478108.txt",
+    "access_count": 0
+  },
+  "what is emotions": {
+    "path": "workspace/memory_cache\\l2_1284554617995423800.txt",
+    "access_count": 0
+  }
+}

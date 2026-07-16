@@ -1,0 +1,12 @@
+{
+  "tcb_id": "TCB_AUD",
+  "workflow_id": "WF_AUD",
+  "state": "EXECUTING",
+  "context": {
+    "var": "audit"
+  },
+  "log_trace": [
+    "start"
+  ],
+  "timestamp": 1783091918.2228198
+}

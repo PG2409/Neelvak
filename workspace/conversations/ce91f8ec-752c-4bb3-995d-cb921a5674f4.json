@@ -1,0 +1,32 @@
+{
+  "id": "ce91f8ec-752c-4bb3-995d-cb921a5674f4",
+  "created_at": "2026-07-04T08:51:32.444009",
+  "updated_at": "2026-07-04T08:51:38.286130",
+  "turns": [
+    {
+      "turn_id": "59f64c74-d13d-44db-8615-e807b2a6f04e",
+      "timestamp": "2026-07-04T08:51:38.286110",
+      "user_prompt": "Explain quantum entanglement in simple terms d9dfd173",
+      "response": {
+        "conversation_id": "ce91f8ec-752c-4bb3-995d-cb921a5674f4",
+        "winner": "RUNTIME ERROR",
+        "tier": "RUNTIME ERROR",
+        "processes": [],
+        "telemetry": [
+          "[Kernel] Multi-pass compilation successful. Created WorkflowPlan ce91f8ec-752c-4bb3-995d-cb921a5674f4.",
+          "[Kernel] Provisioned workspace environment container at: workspace\\ce91f8ec-752c-4bb3-995d-cb921a5674f4",
+          "[Kernel] Topological sort completed. Layers count: 3.",
+          "[Kernel] Executing TCB node ST_01 on RETRIEVAL runtime.",
+          "[Kernel] Executing TCB node ST_02 on COMPETITIVE runtime.",
+          "[Kernel] Executing TCB node ST_03 on STANDARD runtime.",
+          "[Kernel] ONLINE -> RUNTIME ERROR -> Recovery policy executes -> ONLINE",
+          "[RUNTIME ERROR] Reason: {\"status\": \"provider_error\", \"provider\": \"gemini\", \"reason\": \"All routing chain providers exhausted: All providers exhausted. Last error: gemini returned 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota ex\"}",
+          "[Recovery] Recovery policy executes"
+        ],
+        "output": "Execution Interrupted: RUNTIME ERROR\nReason: {\"status\": \"provider_error\", \"provider\": \"gemini\", \"reason\": \"All routing chain providers exhausted: All providers exhausted. Last error: gemini returned 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota ex\"}\nRecovery Action: Recovery policy executes",
+        "metadata": {},
+        "workflow_id": "ce91f8ec-752c-4bb3-995d-cb921a5674f4"
+      }
+    }
+  ]
+}

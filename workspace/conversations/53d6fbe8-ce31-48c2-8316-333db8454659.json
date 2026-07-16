@@ -1,0 +1,104 @@
+{
+  "id": "53d6fbe8-ce31-48c2-8316-333db8454659",
+  "created_at": "2026-07-04T05:02:51.307244",
+  "updated_at": "2026-07-04T05:03:20.786517",
+  "turns": [
+    {
+      "turn_id": "2efe20e4-d518-495e-b808-b08c123281f7",
+      "timestamp": "2026-07-04T05:02:51.330332",
+      "user_prompt": "hi",
+      "response": {
+        "conversation_id": "53d6fbe8-ce31-48c2-8316-333db8454659",
+        "winner": "MemoryManager Cache",
+        "tier": "RETRIEVAL TIER",
+        "processes": [
+          {
+            "id": "PCB_CACHE",
+            "role": "Cache Manager",
+            "state": "TERMINATED",
+            "model": "L1-L5 Cache hit",
+            "provider": "internal"
+          }
+        ],
+        "telemetry": [
+          "[Kernel] Cache Hit resolved on prompt (CSS: 1.00). Short-circuiting execution.",
+          "[Kernel] MemoryManager promoted cached payload metadata."
+        ],
+        "output": "[Mock LLM] Response to: hi"
+      }
+    },
+    {
+      "turn_id": "4cfd3e90-9d25-4d9a-bf34-9703742a4821",
+      "timestamp": "2026-07-04T05:03:20.786504",
+      "user_prompt": "what is full form of mit",
+      "response": {
+        "conversation_id": "53d6fbe8-ce31-48c2-8316-333db8454659",
+        "workflow_id": "53d6fbe8-ce31-48c2-8316-333db8454659",
+        "winner": "Worker Agent",
+        "tier": "COMPETITIVE TIER",
+        "processes": [
+          {
+            "id": "ST_01",
+            "role": "Node Task - RETRIEVAL",
+            "state": "TERMINATED",
+            "model": "meta-llama/llama-3.1-8b-instruct:free",
+            "provider": "groq"
+          },
+          {
+            "id": "ST_02",
+            "role": "Node Task - COMPETITIVE",
+            "state": "TERMINATED",
+            "model": "llama-3.3-70b-versatile",
+            "provider": "groq"
+          },
+          {
+            "id": "ST_03",
+            "role": "Node Task - STANDARD",
+            "state": "TERMINATED",
+            "model": "llama-3.3-70b-versatile",
+            "provider": "groq"
+          }
+        ],
+        "telemetry": [
+          "[Kernel] Multi-pass compilation successful. Created WorkflowPlan 53d6fbe8-ce31-48c2-8316-333db8454659.",
+          "[Kernel] Provisioned workspace environment container at: workspace\\53d6fbe8-ce31-48c2-8316-333db8454659",
+          "[Kernel] Topological sort completed. Layers count: 3.",
+          "[Kernel] Executing TCB node ST_01 on RETRIEVAL runtime.",
+          "[Kernel] Executing TCB node ST_02 on COMPETITIVE runtime.",
+          "[Kernel] Executing TCB node ST_03 on STANDARD runtime.",
+          "[Kernel] Deprovisioned sandbox container. Resources released."
+        ],
+        "output": "The full form of MIT can have different meanings depending on the context: 1. **Massachusetts Institute of Technology**: This is one of the most well-known meanings of MIT. It is a prestigious private research university located in Cambridge, Massachusetts, USA. 2. **Mars Investigation Team**: In the context of space exploration, MIT can refer to a team of scientists and engineers working on Mars-related projects. 3. **Medical Imaging Technology**: In the medical field, MIT can refer to the technology used to create images of the body for diagnostic purposes. 4. **Management Information Technology**: In the context of business and management, MIT can refer to the use of technology to support decision-making and organizational operations. 5. **Ministry of International Trade**: In some countries, MIT can refer to a government ministry responsible for promoting international trade and commerce. Without more context, it's difficult to determine which meaning is most relevant. If you have any additional information or clarification, I'd be happy to try and provide a more specific answer!",
+        "metadata": {
+          "estimated_cost_usd": 0.001,
+          "latency_ms": 1509.894400000121,
+          "provider": "groq",
+          "model": "llama-3.3-70b-versatile"
+        },
+        "runtime_selection": [
+          {
+            "intent": "what is full form of mit",
+            "complexity": "LOW",
+            "chosen_runtime": "RETRIEVAL",
+            "reason": "Matched capability constraints for tier: LOW",
+            "confidence": "98%"
+          },
+          {
+            "intent": "what is full form of mit",
+            "complexity": "HIGH",
+            "chosen_runtime": "COMPETITIVE",
+            "reason": "Matched capability constraints for tier: HIGH",
+            "confidence": "98%"
+          },
+          {
+            "intent": "what is full form of mit",
+            "complexity": "STANDARD",
+            "chosen_runtime": "STANDARD",
+            "reason": "Matched capability constraints for tier: STANDARD",
+            "confidence": "98%"
+          }
+        ]
+      }
+    }
+  ]
+}

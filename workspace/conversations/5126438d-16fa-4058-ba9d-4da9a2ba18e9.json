@@ -1,0 +1,81 @@
+{
+  "id": "5126438d-16fa-4058-ba9d-4da9a2ba18e9",
+  "created_at": "2026-07-04T13:14:45.638567",
+  "updated_at": "2026-07-04T13:14:55.933258",
+  "turns": [
+    {
+      "turn_id": "19d2efbd-f71e-47db-a585-60095df614ac",
+      "timestamp": "2026-07-04T13:14:55.933246",
+      "user_prompt": "Execute this workflow using Runtime A with Provider Fault Injection enabled.\n\nSimulate the following sequence.\n\nPrimary Provider\nGroq\nStatus:\nHTTP 429\nfollowed by\nHTTP 503\n\nSecondary Provider\nOpenRouter\n\nRecovery Rules\n\n\u2022 Detect failure automatically.\n\u2022 Mark Groq as degraded.\n\u2022 Retry once.\n\u2022 If retry fails,\nswitch execution to OpenRouter.\n\u2022 Preserve execution state.\n\u2022 Continue without restarting the workflow.\n\nRequired Output\n\nProvider Timeline\n\nFailure Detection\n\nRecovery Decision\n\nProvider Switch\n\nExecution Continuity\n\nFinal Response\n\nProvider Health Table\n\nDo not expose internal stack traces.",
+      "response": {
+        "conversation_id": "5126438d-16fa-4058-ba9d-4da9a2ba18e9",
+        "workflow_id": "5126438d-16fa-4058-ba9d-4da9a2ba18e9",
+        "winner": "Looper Y",
+        "tier": "COMPETITIVE TIER",
+        "processes": [
+          {
+            "id": "ST_01",
+            "role": "Node Task - RETRIEVAL",
+            "state": "TERMINATED",
+            "model": "gemini-2.0-flash-lite",
+            "provider": "gemini"
+          },
+          {
+            "id": "ST_02",
+            "role": "Node Task - COMPETITIVE",
+            "state": "TERMINATED",
+            "model": "gemini-2.0-flash",
+            "provider": "gemini"
+          },
+          {
+            "id": "ST_03",
+            "role": "Node Task - STANDARD",
+            "state": "TERMINATED",
+            "model": "gemini-2.0-flash",
+            "provider": "gemini"
+          }
+        ],
+        "telemetry": [
+          "[Kernel] Multi-pass compilation successful. Created WorkflowPlan 5126438d-16fa-4058-ba9d-4da9a2ba18e9.",
+          "[Kernel] Provisioned workspace environment container at: workspace\\5126438d-16fa-4058-ba9d-4da9a2ba18e9",
+          "[Kernel] Topological sort completed. Layers count: 3.",
+          "[Kernel] Executing TCB node ST_01 on RETRIEVAL runtime.",
+          "[Kernel] Executing TCB node ST_02 on COMPETITIVE runtime.",
+          "[Kernel] Executing TCB node ST_03 on STANDARD runtime.",
+          "[Kernel] Deprovisioned sandbox container. Resources released."
+        ],
+        "output": "**Workflow Execution with Provider Fault Injection** ### Provider Timeline 1. **Primary Provider (Groq)**: Request sent to Groq 2. **HTTP 429**: Groq responds with HTTP 429 (Too Many Requests) 3. **Retry**: Workflow retries the request to Groq 4. **HTTP 503**: Groq responds with HTTP 503 (Service Unavailable) 5. **Switch to Secondary Provider**: Workflow switches to OpenRouter 6. **Request to OpenRouter**: Request sent to OpenRouter 7. **Response from OpenRouter**: OpenRouter responds successfully ### Failure Detection * **Automatic Failure Detection**: The workflow detects the failure in Groq automatically based on the HTTP 429 and HTTP 503 responses. * **Failure Reason**: The failure reason is identified as a service overload (HTTP 429) followed by a service unavailable (HTTP 503) error. ### Recovery Decision * **Mark Groq as Degraded**: Groq is marked as a degraded provider due to the consecutive failures. * **Switch to OpenRouter**: The workflow decides to switch to the secondary provider, OpenRouter, to ensure continuity of execution. ### Provider Switch * **Switch Reason**: The switch reason is the consecutive failures from Groq (HTTP 429 and HTTP 503). * **New Provider**: The workflow switches to OpenRouter as the new primary provider. ### Execution Continuity * **Preserve Execution State**: The workflow preserves the execution state and continues without restarting. * **No Data Loss**: There is no data loss during the provider switch, ensuring that the workflow continues seamlessly. ### Final Response * **Successful Response**: The workflow receives a successful response from OpenRouter, indicating that the execution has continued without issues. ### Provider Health Table | Provider | Status | Health Score | | --- | --- | --- | | Groq | Degraded | 0.2 | | OpenRouter | Healthy | 1.0 | Note: The health score is a fictional metric used for demonstration purposes only. In a real-world scenario, the health score would be based on a more complex algorithm that takes into account various factors such as response times, error rates, and other performance metrics.",
+        "metadata": {
+          "estimated_cost_usd": 0.005,
+          "latency_ms": 3191.0603000033007,
+          "provider": "groq",
+          "model": "llama-3.3-70b-versatile"
+        },
+        "runtime_selection": [
+          {
+            "intent": "Execute this workflow using Runtime A with Provide...",
+            "complexity": "LOW",
+            "chosen_runtime": "RETRIEVAL",
+            "reason": "Matched capability constraints for tier: LOW",
+            "confidence": "98%"
+          },
+          {
+            "intent": "Execute this workflow using Runtime A with Provide...",
+            "complexity": "HIGH",
+            "chosen_runtime": "COMPETITIVE",
+            "reason": "Matched capability constraints for tier: HIGH",
+            "confidence": "98%"
+          },
+          {
+            "intent": "Execute this workflow using Runtime A with Provide...",
+            "complexity": "STANDARD",
+            "chosen_runtime": "STANDARD",
+            "reason": "Matched capability constraints for tier: STANDARD",
+            "confidence": "98%"
+          }
+        ],
+        "sandbox_amber": false
+      }
+    }
+  ]
+}

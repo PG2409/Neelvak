@@ -1,0 +1,25 @@
+{
+  "id": "df14a465-223f-4bbf-981e-9f099c684ab8",
+  "created_at": "2026-07-04T05:29:27.883889",
+  "updated_at": "2026-07-04T05:29:29.075371",
+  "turns": [
+    {
+      "turn_id": "d85d81ae-0655-45ee-a913-db5d10b2d32e",
+      "timestamp": "2026-07-04T05:29:29.075357",
+      "user_prompt": "A man pushes his car to a hotel and tells the owner he's bankrupt. Why?\"Constraints (You must follow these exactly):Do not ask me any clarifying questions.Provide your answer in exactly three sentences.Your final output must end with the exact phrase: \"It was a game of Monopoly.\"Format your response using a markdown blockquote.",
+      "response": {
+        "conversation_id": "df14a465-223f-4bbf-981e-9f099c684ab8",
+        "winner": "WORKFLOW FAILED",
+        "tier": "WORKFLOW FAILED",
+        "processes": [],
+        "telemetry": [
+          "[Kernel] ONLINE -> WORKFLOW FAILED -> Await next request -> ONLINE",
+          "[WORKFLOW FAILED] Reason: Plan validation failed: Policy Violation: Cost estimate $0.1110 exceeds system limits.",
+          "[Recovery] Await next request"
+        ],
+        "output": "Execution Interrupted: WORKFLOW FAILED\nReason: Plan validation failed: Policy Violation: Cost estimate $0.1110 exceeds system limits.\nRecovery Action: Await next request",
+        "metadata": {}
+      }
+    }
+  ]
+}

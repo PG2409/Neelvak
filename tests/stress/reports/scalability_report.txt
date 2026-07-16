@@ -1,0 +1,90 @@
+# Kernel Scalability Report
+
+Metric: eventbus_publish
+  P50: 0.0000s
+  P90: 0.0000s
+  P95: 0.0000s
+  P99: 0.0000s
+  Max: 0.0289s
+  Count: 160000
+
+Metric: eventbus_total_duration
+  P50: 109.1032s
+  P90: 198.4291s
+  P95: 198.4291s
+  P99: 198.4291s
+  Max: 198.4291s
+  Count: 3
+
+Metric: registry_insert
+  P50: 0.0000s
+  P90: 0.0000s
+  P95: 0.0000s
+  P99: 0.0000s
+  Max: 0.0018s
+  Count: 6100
+
+Metric: registry_update
+  P50: 0.0000s
+  P90: 0.0000s
+  P95: 0.0000s
+  P99: 0.0000s
+  Max: 0.0003s
+  Count: 6100
+
+Metric: registry_remove
+  P50: 0.0000s
+  P90: 0.0000s
+  P95: 0.0000s
+  P99: 0.0000s
+  Max: 0.0002s
+  Count: 6100
+
+Metric: env_provision
+  P50: 0.0007s
+  P90: 0.0014s
+  P95: 0.0019s
+  P99: 0.0027s
+  Max: 0.0177s
+  Count: 600
+
+Metric: env_deprovision
+  P50: 0.0004s
+  P90: 0.0007s
+  P95: 0.0010s
+  P99: 0.0017s
+  Max: 0.0069s
+  Count: 600
+
+Metric: env_total_duration
+  P50: 0.6912s
+  P90: 0.6912s
+  P95: 0.6912s
+  P99: 0.6912s
+  Max: 0.6912s
+  Count: 2
+
+Metric: scheduler_workflow_completion
+  P50: 11.2848s
+  P90: 24.4143s
+  P95: 26.0336s
+  P99: 27.1208s
+  Max: 27.3939s
+  Count: 600
+
+Metric: scheduler_total_duration
+  P50: 27.7386s
+  P90: 27.7386s
+  P95: 27.7386s
+  P99: 27.7386s
+  Max: 27.7386s
+  Count: 2
+
+Metric: exhaustion_flood_time
+  P50: 3.9265s
+  P90: 3.9265s
+  P95: 3.9265s
+  P99: 3.9265s
+  Max: 3.9265s
+  Count: 1
+

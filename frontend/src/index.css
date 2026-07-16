@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg-main: #1e1e1e;
+  --color-bg-panels: #141414;
+  --color-bg-card: #252526;
+  --color-border-color: rgba(255, 255, 255, 0.08);
+  --color-text-primary: #cccccc;
+  --color-text-muted: #888888;
+  --color-accent-orange: #d97706;
+
+  --font-sans: 'Inter', sans-serif;
+}
+
+@layer utilities {
+  .bg-magenta-gradient {
+    background-image: radial-gradient(circle at bottom right, rgba(162, 28, 175, 0.15) 0%, transparent 40%),
+                      radial-gradient(circle at top left, rgba(76, 29, 149, 0.15) 0%, transparent 40%);
+  }
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-bg-main);
+  color: var(--color-text-primary);
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #3f3f46;
+  border-radius: 9999px;
+}
+
+.smooth-transition {
+  transition: all 0.2s ease-in-out;
+}
+
+/* Trace line vertical segment */
+.trace-line-container {
+  position: relative;
+}
+.trace-line-container::before {
+  content: '';
+  position: absolute;
+  left: 11px;
+  top: 24px;
+  bottom: -8px;
+  width: 1px;
+  background-color: #3f3f46;
+  z-index: 0;
+}
+.trace-line-container:last-child::before {
+  display: none;
+}

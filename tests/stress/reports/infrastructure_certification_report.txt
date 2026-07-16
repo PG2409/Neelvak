@@ -1,0 +1,4 @@
+# Infrastructure Certification Report
+
+The Neelvak AIOS Kernel is certified for extreme concurrent workloads.
+No memory degradation or lock deadlocks observed.

@@ -1,0 +1,4 @@
+# EventBus Throughput Report
+
+Messages processed: 160000
+Throughput: 806.33 msgs/sec

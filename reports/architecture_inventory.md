@@ -1,0 +1,24 @@
+# AIOS Architecture Inventory
+- **Total Internal Packages**: 10
+- **Total Source Files**: 41
+- **Subsystem Classes**:
+  - EventBus: `kernel/bus.py`
+  - AgentRegistry: `kernel/registry.py`
+  - LifecycleManager: `kernel/lifecycle.py`
+  - MemoryManager: `memory/manager.py`
+  - ContextManager: `memory/context.py`
+  - AICompiler: `compiler/compiler.py`
+  - PolicyEngine: `compiler/policy.py`
+  - ModelRouter: `models/router.py`
+  - ProviderHealthManager: `models/health.py`
+  - CheckpointManager: `storage/checkpoints.py`
+  - RuntimeScheduler: `runtime/scheduler.py`
+  - ToolManager: `runtime/tool_manager.py`
+  - Gateway Server: `gateway/server.py`
+
+- **Runtimes Hierarchy**:
+  - `CompetitiveRuntime` -> Inherits `RuntimeContract`
+  - `StandardRuntime` -> Inherits `RuntimeContract`
+  - `MicroRuntime` -> Inherits `RuntimeContract`
+  - `DirectRuntime` -> Inherits `RuntimeContract`
+  - `RetrievalRuntime` -> Inherits `RuntimeContract`

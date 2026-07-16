@@ -1,0 +1,4 @@
+# Performance Bottleneck Report
+
+1. Python GIL (Traced in Scheduler async loops)
+2. PriorityQueue insertion bounds (EventBus limit factor)

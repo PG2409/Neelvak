@@ -1,0 +1,31 @@
+{
+  "id": "55750c1b-a5f2-4745-a2b7-a0e290e9e0b3",
+  "created_at": "2026-07-04T08:51:26.140143",
+  "updated_at": "2026-07-04T08:51:26.150504",
+  "turns": [
+    {
+      "turn_id": "501a3199-9617-4ceb-9767-22b4f0360e8a",
+      "timestamp": "2026-07-04T08:51:26.150490",
+      "user_prompt": "What is the full form of LLM?",
+      "response": {
+        "conversation_id": "55750c1b-a5f2-4745-a2b7-a0e290e9e0b3",
+        "winner": "MemoryManager Cache",
+        "tier": "RETRIEVAL TIER",
+        "processes": [
+          {
+            "id": "PCB_CACHE",
+            "role": "Cache Manager",
+            "state": "TERMINATED",
+            "model": "L1-L5 Cache hit",
+            "provider": "internal"
+          }
+        ],
+        "telemetry": [
+          "[Kernel] Cache Hit resolved on prompt (CSS: 0.86). Short-circuiting execution.",
+          "[Kernel] MemoryManager promoted cached payload metadata."
+        ],
+        "output": "[Mock LLM] Response to: what is full form of llm"
+      }
+    }
+  ]
+}

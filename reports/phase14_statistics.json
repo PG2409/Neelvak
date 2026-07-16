@@ -1,0 +1,28 @@
+{
+    "Total Python files": 111,
+    "Total source files": 111,
+    "Total source lines": 11421,
+    "Total test files": 55,
+    "Total tests": 243,
+    "Tests passed": 243,
+    "Tests failed": 0,
+    "Tests skipped": 0,
+    "Overall pass percentage": 100.0,
+    "Runtime implementations": 5,
+    "Supported runtimes": [
+        "COMPETITIVE",
+        "STANDARD",
+        "MICRO",
+        "DIRECT",
+        "RETRIEVAL"
+    ],
+    "Supported providers": [
+        "openai",
+        "anthropic",
+        "google",
+        "meta",
+        "groq",
+        "openrouter"
+    ],
+    "Coverage": 98.8
+}

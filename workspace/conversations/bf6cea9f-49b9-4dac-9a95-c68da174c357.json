@@ -1,0 +1,31 @@
+{
+  "id": "bf6cea9f-49b9-4dac-9a95-c68da174c357",
+  "created_at": "2026-07-04T09:26:37.843857",
+  "updated_at": "2026-07-04T09:26:37.864077",
+  "turns": [
+    {
+      "turn_id": "89ad2e19-4759-456e-b4f9-c3caa265cfb2",
+      "timestamp": "2026-07-04T09:26:37.864050",
+      "user_prompt": "hi",
+      "response": {
+        "conversation_id": "bf6cea9f-49b9-4dac-9a95-c68da174c357",
+        "winner": "MemoryManager Cache",
+        "tier": "RETRIEVAL TIER",
+        "processes": [
+          {
+            "id": "PCB_CACHE",
+            "role": "Cache Manager",
+            "state": "TERMINATED",
+            "model": "L1-L5 Cache hit",
+            "provider": "internal"
+          }
+        ],
+        "telemetry": [
+          "[Kernel] Cache Hit resolved on prompt (CSS: 1.00). Short-circuiting execution.",
+          "[Kernel] MemoryManager promoted cached payload metadata."
+        ],
+        "output": "[Mock LLM] Response to: hi"
+      }
+    }
+  ]
+}
