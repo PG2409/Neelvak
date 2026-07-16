@@ -1,123 +1,127 @@
-# 🌌 Neelvak AIOS v1.3
+# Neelvak Orchestrator: Dual-Transport Multi-Agent MCP Core
 
-![Version](https://img.shields.io/badge/version-1.3-blue.svg)
-![Coverage](https://img.shields.io/badge/coverage-98%25-brightgreen.svg)
-![Security](https://img.shields.io/badge/audit-A%2B-success.svg)
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
-
-## 1. 🌌 PROJECT ESSENCE & ARCHITECTURE OVERVIEW
-
-Neelvak AIOS represents a paradigm shift in autonomous cognitive systems: **treating stateless LLMs not as monolithic chatbots, but as raw compute cores (CPUs) heavily constrained by deterministic OS rules.** 
-
-By orchestrating multiple providers (Groq, Gemini, OpenRouter) through a unified kernel, Neelvak strips unpredictable behavior from LLMs, routing intents through strict compilation DAGs, policy verification, and isolated execution containers. 
-
-### Linear System Flow
-The microkernel pipeline ensures every transaction is validated, routed, and safely executed:
-
-```mermaid
-graph TD
-    A[User Prompt] --> B[RequestManager]
-    B --> C[MemoryManager: Cache Check]
-    C -->|Cache Miss| D[AICompiler: IR_v4 DAG]
-    C -->|Cache Hit| J[ResponseFormatter]
-    D --> E[PolicyEngine]
-    E --> F[RuntimeScheduler]
-    F --> G[Execution Lanes / Runtimes]
-    G --> H[ProviderInterface]
-    H --> J
-    J --> K[Web Frontend]
-```
+The Neelvak Orchestrator is an elite, production-grade artificial intelligence gateway. It manages complex parallel execution queues against GroqCloud APIs, routing diverse analytical loads across a highly resilient, auto-healing swarm of worker agents. It features a complete dual-transport execution engine capable of driving a high-fidelity web dashboard or natively connecting to any local LLM IDE over the Model Context Protocol (MCP).
 
 ---
 
-## 2. ⚡ THE 5 KERNEL RUNTIMES (THE RUNTIME MATRIX)
+## 1. ARCHITECTURE OVERVIEW
 
-The heart of Neelvak is its deeply isolated Execution Scheduler. Once an execution plan (IR_v4 DAG) is formulated, it is routed into one of five distinct runtime lanes based on complexity, speed, and safety requirements:
+### 3-Tier Intent Gateway Routing Logic
 
-| Runtime | Tier Classification | Core Capabilities |
-| :--- | :--- | :--- |
-| **Runtime A** | Competitive Runtime | Dual-agent adversarial loop. Features a Worker generating output and a Looper evaluating it, validated out-of-band by an Unbiased Surveillance Watchdog before finalizing. |
-| **Runtime B** | Standard Runtime | Single-threaded conversation workers with basic deterministic auditing and tool utilization. |
-| **Runtime C** | Parallel Micro Runtime | Ephemeral, high-speed `asyncio` scraper and extraction operations designed to bypass heavy containerization for raw speed. |
-| **Runtime D** | Direct Inference Runtime | Bare-metal direct API completions short-circuiting agent wrappers entirely. Used for zero-latency formatting and translation. |
-| **Runtime E** | Memory & Retrieval Runtime | Direct Memory Access (DMA) pipeline pulling vector index entries directly without incurring any generative model costs. |
+Every incoming prompt is evaluated against a strict semantic heuristic matrix to assign dynamic computational paths before any network requests are fired:
 
----
+- Tier 1 (Definition Thread): A fast execution path designed for single-word dictionary queries or simple greetings (e.g., hello, define, what is). Executes instantly on a single llama-3.1-8b-instant thread.
 
-## 3. 🛡️ OBSERVABILITY & FIXED STRUCTURAL GAPS (V1.3 SPECIFICS)
+- Tier 2 (Standard Path): A standard generation path reserved for conversational ideation and rapid text drafting (e.g., write, draft, create). Operates as a single-threaded payload on llama-3.1-8b-instant.
 
-With v1.3, Neelvak AIOS transitions from descriptive state summaries to live, observational event data driven strictly by `@dataclass` logging rings. 
+- Tier 3 (Mission-Critical Matrix): The heavy parallel-compute pipeline triggered by analytical structural queries (e.g., analyze, predict, financial, compare). This immediately bypasses standard rules, concurrently launching Worker X (llama-3.3-70b-versatile) as the primary intelligence engine alongside Shadow Y (qwen/qwen3-32b) as the supervisor verification agent under a strict asynchronous queue block.
 
-We have aggressively hardened the core loop, implementing **5 critical remediation metrics**:
+### Text Surveillance Engine Layer
 
-1. **Weak-Reference Event Bus:** Listener maps now employ weak-reference arrays to eliminate zombie listener memory leak retention.
-2. **Abstract Cluster Consensus:** The kernel can now scale horizontally. Consensus scaling is activated instantly via the `--distributed` runtime boot flag.
-3. **Pass 0 Heuristics:** Deterministic heuristic short-circuits to immediately halt compilation token waste on trivial, zero-computation lookups.
-4. **Sliding Window Token Tracking:** Active context buffer arrays inside Runtime A adversarial loops now use strict sliding windows to prevent infinite context overflow panics.
-5. **Granular Provider Eviction:** Strict `httpx` timeouts (2-second connection drops) instantly penalize slow APIs with an automated 60-second provider eviction penalty, automatically failing over to backup nodes.
+When a Tier 3 execution resolves, the raw diagnostic text strings generated by the internal system components are regex-scrubbed. This layer guarantees that the final output returned to the client is always a clean, formatted paragraph completely stripped of internal engineering fragments.
+
+### Local Semantic Matrix Double-Fail Simulation
+
+Engineered to withstand the heaviest GroqCloud API rate limits, the Orchestrator encapsulates a strict dual-failure catching mechanism. If both the Worker X and Shadow Y asynchronous threads experience concurrent HTTP hang timeouts or 429 rate blocks, the Master Coordinator intercepts the failure and synthesizes an Ultimate Local Simulator briefing. This offline failover guarantees that the application architecture never crashes or stalls unexpectedly.
 
 ---
 
-## 4. 📦 INSTALLATION, REQUIREMENTS, AND BOOT SUB-SYSTEMS
+## 2. THE DUAL-TRANSPORT SUBSYSTEM DECOUPLING
 
-### Environment Initialization
-Clone the repository and define your environment configurations.
+The Neelvak architecture has completely abstracted the core AI logic from the initial monolithic web server. The 3-Tier matrix and simulation engine have been decoupled into a standalone asynchronous pipeline, allowing the system to boot as one of two distinct operational nodes.
 
-```bash
-git clone https://github.com/your-org/neelvak-aios.git
-cd neelvak-aios
-```
+### Web Transport Node (HTTP)
 
-Create a `.env` file in the root directory to map your orchestration engines:
-```env
-GROQ_API_KEY=your_groq_key_here
-OPENROUTER_API_KEY=your_openrouter_key_here
-GEMINI_API_KEY=your_gemini_key_here
-```
+Running the platform without flags invokes the legacy REST application. It boots an internal Uvicorn server on port 8000, surfacing the high-fidelity dashboard interface with pipeline visualizers, agent telemetry tabs, and a Gemini-style prompt experience.
 
-### Dependency Tree
-Install the strictly version-locked dependencies. 
-> **Note:** `aiohttp>=3.9.0` is strictly required for cluster-sync tables alongside our standard API components.
+### Protocol Transport Node (STDIO)
+
+By supplying the `--mcp` command-line flag, the platform abandons the web framework entirely and launches a standalone Model Context Protocol (MCP) server utilizing FastMCP over a JSON-RPC Standard I/O connection.
+
+#### Protocol Tool
+
+- `execute_neelvak_agent_matrix`
+
+Allows connected agents to execute prompts through the complete 3-Tier parallel compute matrix.
+
+#### Protocol Resource
+
+- `neelvak://history`
+
+Allows external AI contexts to read the `data_store.json` history arrays seamlessly and inherit the orchestrator's past memories.
+
+---
+
+## 3. INSTALLATION & RUN TIME GUIDE
+
+### Environment Setup
+
+Install the required dependencies:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-*Excerpt of critical requirements:*
-```text
-fastapi>=0.100.0
-uvicorn>=0.23.0
-httpx>=0.24.1
-aiohttp>=3.9.0
-```
+### Launch the Dashboard Node (Web UI)
 
-### Boot Sub-systems
-Start the primary FastAPI Gateway server:
-
-**Standard Local Boot:**
 ```bash
 python main.py
 ```
 
-**Horizontal Cluster Mode:**
-```bash
-python main.py --distributed
+The dashboard will become available at:
+
+```text
+http://127.0.0.1:8000
 ```
 
-**External IDE Pipeline Injection:**
-Connect the microkernel's tool infrastructure directly to external IDE pipelines (Cursor, Claude Desktop) by tunneling via the Model Context Protocol (MCP) flag:
+### Launch the MCP Protocol Transport Node
+
 ```bash
 python main.py --mcp
 ```
 
+When running in MCP mode, all JSON-RPC communication operates over standard input/output while application logging is redirected appropriately.
+
 ---
 
-## 5. 🧪 PLATFORM BENCHMARKS & CERTIFICATION DEVIATION
+## 4. MCP IDE INTEGRATION
 
-Neelvak AIOS enforces uncompromising standards on production readiness and codebase stability:
+Example MCP configuration:
 
-- **Total Repository Footprint:** 45 strictly decoupled files.
-- **Test Coverage Matrix:** 98% total branch execution coverage.
-- **Security Audit Protocol:** Perfect A+ audit readiness score against standard penetration metrics.
+```json
+{
+  "mcpServers": {
+    "neelvak-orchestrator": {
+      "command": "python",
+      "args": [
+        "/path/to/your/main.py",
+        "--mcp"
+      ]
+    }
+  }
+}
+```
 
-*Built by the Elite Systems Engineering Team. For internal operational deployment.*
+This enables local IDEs such as Cursor and Claude Desktop to communicate directly with the Neelvak Orchestrator through MCP.
+
+---
+
+## 5. FEATURES
+
+- Dual-Transport Architecture (HTTP + MCP)
+- Multi-Agent Parallel Execution Pipeline
+- Tier-Based Intelligent Prompt Routing
+- Worker/Shadow Verification System
+- Ultimate Local Simulation Failover
+- FastMCP Protocol Integration
+- JSON-RPC STDIO Transport Support
+- Persistent Conversation History Resources
+- High-Performance GroqCloud Inference Routing
+- Production-Grade Dashboard Interface
+- Secure Environment Variable Isolation
+
+---
+
+## License
+
+This project is intended for research, experimentation, and production-grade AI orchestration workflows.
